@@ -11,6 +11,7 @@
 	<link rel="stylesheet" media="screen" href="css/styles.css">
 	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 
 <body class="skin bg-white">
@@ -58,7 +59,10 @@
 					<div class="title-label">
 						<div class="inner">2017 年 3 月 7 日
 							<span class="entry-cate"> &#8226; <a >Y2 结业考试 </a> &#8226;
-					</span>
+							</span>
+						</div>
+						<div id="app">
+							{{ message }}
 						</div>
 					</div>
 					<div class="textbox-adminbar"></div>
@@ -75,10 +79,11 @@
 		</div>
 		<footer>
 			<script type="text/javascript">
-				$.ajax({
-					url:'data.json'
-				}).done(function(data){
-					console.log(data);
+				var app = new Vue({
+				  el: '#app',
+				  data: {
+				    message: 'Hello Vue!'
+				  }
 				})
 			</script>
 		</footer>
