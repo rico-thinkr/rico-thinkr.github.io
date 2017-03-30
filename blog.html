@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blogging Like a Hacker
+---
+{% for post in site.posts %}
+<div class="card">
+	<div class="card-block">
+		<h2 class="card-title text-center">{{post.title}}</h2>
+		<div class="title-label">
+			<div class="inner">{{ post.date | date : "%m 月%d 日 •  %Y年 •"}}
+				<span class="entry-cate">
+					<a href="category/tutorials-chn/" title="">
+						{% for tag in post.categories%}
+							{{tag}}  &nbsp;
+						{%endfor%}
+					</a>
+				</span>
+			</div>
+		</div>
+
+		{{ post.excerpt  }}
+	</div>
+	<div class="card-block text-center ">
+		<a class="btn  btn-read" href ="{{post.url}}">Read More</a>
+	</div>
+</div>
+{% endfor %}

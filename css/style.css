@@ -1,0 +1,278 @@
+
+/* 全局字体设置 */
+
+@font-face {
+font-family: 'Meta';
+src: url('../fonts/meta-normal.woff');
+src: local('Meta'),
+local('Meta'),
+url('../fonts/meta-normal.woff') format('truetype'),
+}
+
+@font-face {
+font-family: 'DIN Condensed';
+src: url('../fonts/DIN Condensed Bold.ttf');
+src: local('DIN Condensed'),
+local('DIN Condensed'),
+url('../fonts/DIN Condensed Bold.ttf') format('truetype'),
+}
+
+html{
+	display: block;
+	margin: 0;
+	padding: 0;
+
+}
+body {
+    color: #4f5c6b;
+    overflow-x: hidden;
+    /*height: 100%;*/
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family:"DIN Condensed", "Roboto", Helvetica, "Helvetica Neue", Arial, sans-serif;
+    /*background-color: #fff;*/
+}
+*{
+    transition: all 0.4s ease-in, all 0.4s ease-out;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+
+}
+/* COLORS */
+
+.bg-white{
+	background-color: #fff;
+}
+.text-logo,.text-logo:hover{
+	color: #4f5c6b;
+}
+
+
+
+/* BORDERS */
+.border-top-1{
+	border-top: 1px solid #ddd;
+}
+.border-bottom-1{
+	border-bottom: 1px solid #ddd;
+}
+.border-right-1{
+	border-right: 1px solid #ddd;
+}
+.border-left-1{
+	border-left: 1px solid #ddd;
+}
+
+
+
+/* SHADOWS*/
+
+.sd-bottom{
+	box-shadow: 0px 1px  5px 1px #eee;
+}
+.sd-right{
+	box-shadow: 1px 0px 5px 1px #eee;
+}
+
+/*.bg-primary {
+    background-color: #384157 !important;
+}*/
+
+
+
+button.navbar-toggler:active,button.navbar-toggler:focus{
+	outline: none;
+}
+
+
+
+.navbar{
+	min-height: 30px;
+	height: 30px;
+    line-height: 18px;
+}
+
+#wrapper{
+	width: 100%;
+    margin: 0 auto;
+}
+
+#wrapper > aside {
+    position: fixed;
+    display: block;
+    height: 100%;
+    width: 240px;
+	padding: 42px 0;
+}
+
+aside .avator,
+{
+	width: 100px;
+	height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+aside .card-block{
+	padding: 10px 15px
+}
+aside h3.card-title,
+aside h4.card-title{
+	margin: 0;
+}
+aside .card-footer,
+#content .card-footer{
+	background: #fff;
+	padding: 0rem 1rem;
+	border: none;
+}
+
+aside .card-footer .col-3{
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+aside .row{
+	margin-left: -12px;
+	margin-right: -12px;
+}
+#sns .col-3>a{
+	font-size: 1.4rem;
+	display: block;
+	height: 100%;
+	line-height: 30px
+}
+a.list-group-item {
+
+	font-size: 1.3rem;
+	border-radius: 0;
+	line-height: 1.3rem;
+}
+.list-group-item:first-child,
+.list-group-item:last-child{
+	border-top-right-radius: 0;
+     border-top-left-radius: 0;
+	 border-bottom-left-radius: 0;
+	 border-bottom-right-radius: 0;
+}
+
+#sns .col-3:hover{
+    background: rgba(79, 92, 107, 0.8);
+    color: #fff;
+	border: none;
+}
+
+
+#content .card{
+		/*box-shadow: 0px 0px 5px 1px #ddd;*/
+		margin-top: -1px;
+		border-radius: 0
+}
+#content .card .btn-read{
+	padding: .3rem 1.2rem;
+	background: #4f5c6b;
+	border: none;
+	border-radius: 0;
+	color: #fff;
+
+}
+
+#content .card .btn-read:hover{
+	background: rgba(79, 92, 107, 0.9);
+}
+#content .card h2.card-title{
+	margin-bottom: 0
+}
+.title-label {
+    clear: both;
+    font-size: 1em;
+    color: #5c616b;
+    text-align: center;
+    font-weight: 300;
+}
+.title-label .inner {
+    margin: 0.75em auto .75em;
+    display: inline-block;
+    width: auto;
+    padding: .4em 0;
+    border-bottom: .1em solid #ddd;
+    border-top: .1em solid #ddd;
+}
+
+.title-label a {
+    color: rgba(79, 92, 107, 1);;
+    text-decoration: none;
+}
+
+
+
+
+
+#index-wrapper .banner{
+	position: relative;
+	background-color: #4f5c6b;
+	/*overflow: hidden;*/
+	color: #fff;
+	text-shadow: 1px 0px 1px #666;
+	margin-bottom: 0;
+	padding-bottom: 0
+}
+.banner-bg{
+	background: url('/imgs/bg2.jpeg');
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.8;
+	box-shadow: inset 0px 0px 195px 3px #000;
+}
+
+.banner .avator{
+	width: 120px;
+	height: 120px;
+	border: 3px solid #fff;
+	padding: 0px;
+	background: transparent;
+	box-shadow: 0px 0px 2px #000;
+	position: relative;
+	bottom: -60px;
+
+}
+
+
+#work-e{
+	background-color: #2a2e33;
+	padding: 0px 0px 50px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#work-e img{
+	width: 90%;
+	margin-top: -30px;
+	margin-left: 30px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

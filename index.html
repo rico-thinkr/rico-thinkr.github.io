@@ -1,93 +1,17 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>翱翔在线考试系统</title>
-	<link rel="stylesheet" media="screen" href="css/animate.css">
-	<link rel="stylesheet" media="screen" href="css/bootstrap.min.css">
-	<link rel="stylesheet" media="screen" href="css/styles.css">
-	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="https://unpkg.com/vue/dist/vue.js"></script>
-</head>
-
-<body class="skin bg-white">
-	<nav class="navbar navbar-fixed-top bg-white  animated fadeInDown" role="navigation">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand  text-white text-center " href="#">AoXiang Online Examination System</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#">Link</a></li>
-				<li class="dropdown">
-					<img class="dropdown-toggle img img-circle" style="margin-right:15px;margin-top:5px" data-toggle="dropdown" role="button"
-					  aria-haspopup="true" aria-expanded="false" src="images/tx.jpg" alt="" width="30" height="30">
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="login.html">Action</a></li>
-						<li><a href="#">Another action</a></li>
-						<li><a href="#">Something else here</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="#">Separated link</a></li>
-					</ul>
-				</li>
-			</ul>
-
-		</div>
-	</nav>
-	<div id="wrapper">
-		<aside class="bg-primary animated fadeInDown ">
-			<div class="side-inner">
-				<ul>
-					<li><a>Index</a></li>
-					<li><a>测试</a></li>
-					<li><a>模拟</a></li>
-					<li><a>关于</a></li>
-				</ul>
-			</div>
-
-		</aside>
-		<div class="content animated fadeInRight bg-white">
-			<div class="text-box  p15">
-				<div class="textbox-title" style="width: 100%;">
-					<h1 class="responsive1 text-center">
-						<a href="">Y2 ASP.NET MVC 模拟测试</a>
-					</h1>
-					<div class="title-label">
-						<div class="inner">2017 年 3 月 7 日
-							<span class="entry-cate"> &#8226; <a >Y2 结业考试 </a> &#8226;
-							</span>
-						</div>
-						<div id="app">
-							{{ message }}
-						</div>
-					</div>
-					<div class="textbox-adminbar"></div>
-				</div>
-				<div class="text1">
-					<div class="panel panel-default">
-						<div class="panel-heading">Panel heading without title</div>
-						<div class="panel-body">
-							Panel content
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<script type="text/javascript">
-				var app = new Vue({
-				  el: '#app',
-				  data: {
-				    message: 'Hello Vue!'
-				  }
-				})
-			</script>
-		</footer>
+---
+layout: home
+title: Rico@Think-r
+---
+<div class="jumbotron jumbotron-fluid banner">
+	<div class="banner-bg"></div>
+	<div class="container-fluid text-center">
+		<h1 class="display-3">{{site.data.author.big-title}}</h1>
+		{% for  s in site.data.author.selogan%}
+		<p class="lead">{{s}}</p>
+		{% endfor %}
+		<img class="img-thumbnail rounded-circle avator" src="{{site.data.author.avator}}">
 	</div>
-</body>
-
-</html>
+</div>
+<div id = "work-e" >
+	<img src="/imgs/2017.svg" alt="" >
+</div>

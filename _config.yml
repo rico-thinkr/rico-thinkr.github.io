@@ -1,0 +1,7 @@
+#网站根目录
+baseurl:
+
+# 转换
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: <!-- more -->

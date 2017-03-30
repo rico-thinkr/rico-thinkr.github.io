@@ -1,0 +1,40 @@
+<aside class="border-right-1 sd-right animated fadeInLeft ">
+	<div class="card border-0">
+		<img class="img-thumbnail rounded-circle avator" src="/imgs/tx.jpg" alt="Card image cap">
+		<div class="card-block">
+			<h3 class="card-title text-center">{{site.data.author.name}}</h3>
+			<h5 class="text-center" style="color:rgba(79, 92, 107, 0.5);margin-bottom:0">
+			    {{site.data.author.title}}
+			</h5>
+		</div>
+		<div class="card-footer">
+
+			<!-- <div class="row" id="sns"> -->
+				<!-- <div class="col-3  border-top-1 border-bottom-1 "><a class="fa fa-github"></a></div>
+				<div class="col-3  border-top-1 border-bottom-1 border-left-1 border-right-1"><a class="fa fa-facebook"></a></div>
+				<div class="col-3   border-top-1 border-bottom-1 border-right-1"><a class="fa fa-twitter"></a></div>
+				<div class="col-3   border-top-1 border-bottom-1 "><a class="fa fa-weibo"></a></div> -->
+			<!-- </div> -->
+		</div>
+	</div>
+	<!-- <div class="card border-0">
+		<div class="card-block">
+			<h4 class="card-title">Categories</h4>
+		</div>
+		<ul class="list-group list-group-flush">
+			{% for category in site.categories %}
+				<li class="list-group-item"><a href="{{ site.baseurl}}/category/{{ category.first }}.html">{{category.first}}（{{category.last.size}}）</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="card border-0">
+		<div class="card-block">
+			<h4 class="card-title">Recent Posts</h4>
+		</div>
+		<ul class="list-group list-group-flush">
+			{% for post in site.posts %}
+				<li class="list-group-item"><a href="{{ post.url }}">{{ post.title }} | {{post.date | date: "%Y年%m月%d日"}}</a></li>
+			{% endfor %}
+		</ul>
+	</div> -->
+</aside>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>{{ page.title }}</title>
+		<link rel="stylesheet" href={{site.baseurl}}"/css/animate.css">
+		<link rel="stylesheet" href={{site.baseurl}}"/css/bootstrap.min.css">
+		<link rel="stylesheet" href={{site.baseurl}}"/css/font-awesome.min.css">
+		<link rel="stylesheet" href={{site.baseurl}}"/css/style.css">
+		<link rel="shortcut icon" href="fonts/favicon.ico" type="image/x-icon">
+
+	</head>
+	</head>
+	<body class="skin">
+		{% include header.html %}
+		<div id="wrapper">
+			{% include asider.html %}
+			<div style="margin:30px 0px 30px 240px;padding :15px" id="content">
+				{{ content }}
+			</div>
+		</div>
+
+		{% include footer.html %}
+		<script type="text/javascript" src="/js/jquery.slim.min.js"></script>
+		<script type="text/javascript" src="/js/tether.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	</body>
+</html>
