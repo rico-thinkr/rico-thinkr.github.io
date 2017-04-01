@@ -95,6 +95,7 @@ button.navbar-toggler:active,button.navbar-toggler:focus{
     line-height: 18px;
 }
 
+
 #wrapper{
 	width: 100%;
     margin: 0 auto;
@@ -108,8 +109,7 @@ button.navbar-toggler:active,button.navbar-toggler:focus{
 	padding: 42px 0;
 }
 
-aside .avator,
-{
+aside .avator{
 	width: 100px;
 	height: 100px;
 	margin-left: auto;
@@ -211,13 +211,24 @@ a.list-group-item {
 
 
 #index-wrapper .banner{
+
 	position: relative;
 	background-color: #4f5c6b;
-	/*overflow: hidden;*/
 	color: #fff;
 	text-shadow: 1px 0px 1px #666;
 	margin-bottom: 0;
-	padding-bottom: 0
+}
+@media (min-width:768px) {
+	.banner{
+		padding-bottom: 7rem;
+	}
+
+}
+
+@media (max-width:768px){
+	#work-e #avator{
+		padding:0 42%;
+	}
 }
 .banner-bg{
 	background: url('/imgs/bg2.jpeg');
@@ -228,20 +239,11 @@ a.list-group-item {
 	width: 100%;
 	height: 100%;
 	opacity: 0.8;
-	box-shadow: inset 0px 0px 195px 3px #000;
+	/*box-shadow: inset 0px 0px 195px 3px #000;*/
 }
 
-.banner .avator{
-	width: 120px;
-	height: 120px;
-	border: 3px solid #fff;
-	padding: 0px;
-	background: transparent;
-	box-shadow: 0px 0px 2px #000;
-	position: relative;
-	bottom: -60px;
 
-}
+
 
 
 #work-e{
@@ -252,24 +254,59 @@ a.list-group-item {
 	background-repeat: no-repeat;
 }
 
-#work-e img{
-	width: 90%;
-	margin-top: -30px;
-	margin-left: 30px
+
+#avator{
+	padding:0 45%;
+	position: relative;
+}
+#work-e .avator{
+	width: 100%;
+	height: 100%;
+	border: 3px solid #fff;
+	padding: 0px;
+	background: transparent;
+	box-shadow: 0px 0px 2px #000;
+	position: relative;
+	margin-top: -50%;
+
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 
 
+.pop-info{
+	display: inline-block;;
+	position:relative;
+	padding: 1.2rem
+}
+.pop-info h2{
+	margin-bottom: 0;
+}
 
 
+#works{
+	width: 94%;
+	margin-top: -10%;
 
+}
 
+.social{
+	position: absolute;
+	right: 15px;
+	top:15px
+}
 
-
-
-
-
-
+.social a{
+	color: #4f5c6b;
+}
+.social a:hover .fa-circle{
+	color: #fff;
+}
+.social a:hover .fa-inverse{
+	color: #4f5c6b;
+}
 
 
 
