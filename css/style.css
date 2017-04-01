@@ -126,7 +126,9 @@ aside .card-footer,
 	padding: 0rem 1rem;
 	border: none;
 }
-
+#content{
+	margin:30px 0px 30px 240px;padding :15px
+}
 aside .card-footer .col-3{
 	height: 30px;
 	line-height: 30px;
@@ -230,6 +232,16 @@ a.list-group-item {
 		padding:0 42%;
 	}
 }
+@media (max-width:480px){
+	#wrapper > aside{
+		width: 0px;
+		display: none;
+	}
+	#wrapper #content{
+		width: 100%;
+		margin-left: 0px
+	}
+}
 .banner-bg{
 	background: url('/imgs/bg2.jpeg');
 	background-size: cover;
@@ -319,6 +331,22 @@ a.nav-link {
 a.nav-link:hover {
 	border-bottom: 3px solid #4f5c6b;
 }
+
+.navbar-toggler{
+	color: #4f5c6b;
+	cursor: pointer;
+	padding: 0
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
