@@ -19,9 +19,20 @@
 		<div id="wrapper">
 			{% include asider.html %}
 			<div style="margin:30px 0px 30px 240px;padding :15px" id="content">
-				<div class="card">
+				<div class="card sd-bottom" id="acticle">
+					<h2 class="card-title text-center">{{page.title}}</h2>
+					<div class="title-label">
+						<div class="inner">{{ page.date | date : "%m 月%d 日 •  %Y年 •"}}
+							<span class="entry-cate">
+								<a href="category/tutorials-chn/" title="">
+									{% for tag in page.categories%}
+										{{tag}}  &nbsp;
+									{%endfor%}
+								</a>
+							</span>
+						</div>
+					</div>
 					{{content}}
-
 				</div>
 			</div>
 		</div>

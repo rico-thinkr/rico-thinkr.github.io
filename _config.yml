@@ -3,5 +3,4 @@ baseurl:
 
 # 转换
 markdown: kramdown
-highlighter: rouge
 excerpt_separator: <!-- more -->
