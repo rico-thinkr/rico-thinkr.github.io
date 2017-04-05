@@ -4,3 +4,5 @@ baseurl:
 # 转换
 markdown: kramdown
 excerpt_separator: <!-- more -->
+
+permalink: none

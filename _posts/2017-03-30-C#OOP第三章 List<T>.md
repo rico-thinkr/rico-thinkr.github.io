@@ -3,9 +3,9 @@ layout: post
 title: C#OOP第三章 泛型集合简介
 categories:
 - 教学笔记
-tags:
 - S2
-- C#
+- C# OOP
+permalink: c_oop/3
 ---
 
 ---
