@@ -1,4 +1,4 @@
-<aside class="border-right-1 sd-right animated fadeInLeft ">
+ <aside class="border-right-1 sd-right animated fadeInLeft ">
 	<div class="card border-0">
 		<img class="img-thumbnail rounded-circle avator" src="{{ site.data.author.avator }}" >
 		<div class="card-block">
@@ -18,7 +18,7 @@
 		</div>
 		<ul class="list-group list-group-flush">
 			{% for category in site.categories %}
-				<li class="list-group-item"><a href="#">{{category.first}}（{{category.last.size}}）</a></li>
+				<li class="list-group-item"><a href="/categories/{{ category | first }}">{{category.first}}（{{category.last.size}}）</a></li>
 			{% endfor %}
 		</ul>
 	</div>
