@@ -1,0 +1,42 @@
+WEBSITE:
+    WEB_TITLE: Rico@Think-R
+    BIG_TITLE: DESIGNER or DEVELOPER ?
+    SELOGAN:
+        - The only way to do great work is to love what you do.
+        - If you have not found it yet, keep looking.
+        - Do not bettle.
+        - AS with all matters of the heart, you will know when you find it.
+AUTHOR:
+    NAME: Rico Wang
+    TITLE: Front-end Development Engineer
+    AVATOR: /assets/imgs/tx.jpg
+    SOCIALS:
+        - NAME: Twitter
+          URL: http://www.twitter.com/rico_thinkr
+          ICON: twitter
+        - NAME: Github
+          URL: http://www.github.com
+          ICON: github
+        - NAME: Facebook
+          URL: http://www.weibo.com/illus
+          ICON: facebook
+        - NAME: Weibo
+          URL: http://www.weibo.com/illus
+          ICON: weibo
+CONFIG:
+    ASSETS_PATHS:
+        CSS: /assets/css/
+        JS: /assets/js/
+        FONT: /assets/fonts/
+        IMGS: /assets/imgs/
+    STYLESHEETS:
+        - animate.css
+        - bootstrap.min.css?version=4.0.0-alpha.6
+        - font-awesome.min.css
+        - style.css
+    SCRIPTS:
+        - jquery.slim.min.js
+        - tether.min.js
+        - bootstrap.min.js
+        - app.js
+    ICON: favicon.ico

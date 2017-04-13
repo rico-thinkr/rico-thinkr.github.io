@@ -1,30 +1,10 @@
 ---
-layout: default
+layout: layout
 title: Blog of Rico@Think-r
 ---
 
 <div class="card sd-bottom">
 	{% for post in site.posts %}
-		<div class="card-block">
-			<h2 class="card-title text-center">{{post.title}}</h2>
-			<div class="title-label">
-				<div class="inner">{{ post.date | date : "%m 月%d 日 •  %Y年 •"}}
-					<span class="entry-cate">
-						<a href="categories" title="">
-							{% for tag in post.categories%}
-								{{tag}}  &nbsp;
-							{%endfor%}
-						</a>
-					</span>
-				</div>
-			</div>
-
-			{{ post.excerpt  }}
-		</div>
-		<div class="card-block text-center ">
-			<a class="btn  btn-read" href ="{{post.url}}">Read More</a>
-		</div>
-		<div class="border-bottom-1"style="margin:1rem 0"> </div>
+		{% include themes/own/excerpt %}
 	{% endfor %}
-
 </div>

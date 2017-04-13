@@ -1,10 +1,10 @@
  <aside class="border-right-1 sd-right animated fadeInLeft ">
 	<div class="card border-0">
-		<img class="img-thumbnail rounded-circle avator" src="{{ site.data.author.avator }}" >
+		<img class="img-thumbnail rounded-circle avator" src="{{ site.data.settings.AUTHOR.AVATOR }}" >
 		<div class="card-block">
-			<h3 class="card-title text-center">{{site.data.author.name}}</h3>
+			<h3 class="card-title text-center">{{site.data.settings.AUTHOR.NAME}}</h3>
 			<h5 class="text-center" style="color:rgba(79, 92, 107, 0.5);margin-bottom:0">
-			    {{site.data.author.title}}
+			    {{site.data.settings.AUTHOR.TITLE}}
 			</h5>
 		</div>
 		<div class="card-footer">
@@ -26,20 +26,5 @@
 		<div class="card-block">
 			<h4 class="card-title">Tags</h4>
 		</div>
-		<!-- <ul class="list-group list-group-flush">
-			{% for tag in site.tags %}
-				<li class="list-group-item"><a href="#">{{tag[0]}}</a></li>
-			{% endfor %}
-		</ul> -->
 	</div>
-	<!-- <div class="card border-0">
-		<div class="card-block">
-			<h4 class="card-title">Recent Posts</h4>
-		</div>
-		<ul class="list-group list-group-flush">
-			{% for post in site.posts %}
-				<li class="list-group-item"><a href="{{ post.url }}">{{ post.title }} | {{post.date | date: "%Y年%m月%d日"}}</a></li>
-			{% endfor %}
-		</ul>
-	</div> -->
 </aside>

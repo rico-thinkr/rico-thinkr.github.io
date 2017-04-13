@@ -1,0 +1,6 @@
+{% for a in site.data.settings.AUTHOR.SOCIALS %}
+<a class="fa-stack fa-lg" href="{{ a.URL }}" data-toggle="tooltip" data-placement="top" title="{{ a.NAME }}">
+	<i class="fa fa-circle fa-stack-2x"></i>
+	<i class="fa fa-{{ a.ICON }} fa-stack-1x fa-inverse"></i>
+</a>
+{% endfor %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	{% include /themes/own/head %}
+	<body class="skin">
+		{% include /themes/own/header %}
+		<div id="wrapper">
+			{% include /themes/own/asider %}
+			<div  id="content">
+				{{ content }}
+			</div>
+		</div>
+
+		{% include /themes/own/footer %}
+		{% include /themes/own/scripts %}
+	</body>
+</html>

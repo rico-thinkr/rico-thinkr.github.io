@@ -1,0 +1,6 @@
+
+
+{% for style in site.data.settings.CONFIG.STYLESHEETS%}
+<link rel="stylesheet" href="{{site.data.settings.CONFIG.ASSETS_PATHS.CSS}}{{style}}" />
+{% endfor %}
+<link rel="shortcut icon" href="{{site.data.settings.CONFIG.ASSETS_PATHS.FONT}}{{site.data.settings.CONFIG.ICON}}" type="image/x-icon">

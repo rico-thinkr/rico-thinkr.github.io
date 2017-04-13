@@ -1,0 +1,4 @@
+
+{% for script in site.data.settings.CONFIG.SCRIPTS%}
+<script type="text/javascript" src="{{site.data.settings.CONFIG.ASSETS_PATHS.JS}}{{script}}"></script>
+{% endfor %}

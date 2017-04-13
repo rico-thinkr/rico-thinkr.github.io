@@ -5,8 +5,8 @@ title: Rico@Think-r
 <div class="jumbotron jumbotron-fluid banner">
 	<div class="banner-bg"></div>
 	<div class="container-fluid text-center">
-		<h1 class="display-3">{{site.data.author.big-title}}</h1>
-		{% for  s in site.data.author.selogan%}
+		<h1 class="display-3">{{site.data.settings.WEBSITE.BIG_TITLE}}</h1>
+		{% for  s in site.data.settings.WEBSITE.SELOGAN%}
 		<p class="lead">{{s}}</p>
 		{% endfor %}
 	</div>
@@ -14,29 +14,13 @@ title: Rico@Think-r
 
 <div id = "work-e" class="container-fluid" >
 	<div  id="avator">
-		<img class="img-thumbnail rounded-circle avator" src="{{ site.data.author.avator }}" data-toggle="tooltip" data-placement="right" title="Click here. Enter my website">
+		<img class="img-thumbnail rounded-circle avator" src="{{ site.data.settings.AUTHOR.AVATOR }}" data-toggle="tooltip" data-placement="right" title="Click here. Enter my website">
 		<div class="social">
-			{% for a in site.data.social %}
-			<a class="fa-stack fa-lg" href="{{ a.url }}" data-toggle="tooltip" data-placement="top" title="{{ a.name }}">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-{{ a.icon }} fa-stack-1x fa-inverse"></i>
-			</a>
-			{% endfor %}
+			{% include themes/own/socials%}
 		</div>
 	</div>
 	<div style="overflow:hidden">
-	<img src="/imgs/2017.svg" id="works" >
+	<img src="{{site.data.settings.CONFIG.ASSETS_PATHS.IMGS}}2017.svg" id="works" >
 
 	</div>
 </div>
-<script type="text/javascript" src="/js/jquery.slim.min.js"></script>
-<script type="text/javascript" src="/js/tether.min.js"></script>
-<script type="text/javascript" src="/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-$(function () {
-	$('[data-toggle="tooltip"]').tooltip();
-});
-$('img[src="/imgs/tx.JPG"]').click(function(){
-	location.href='/blog';
-})
-</script>

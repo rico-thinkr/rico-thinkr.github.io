@@ -6,3 +6,4 @@ markdown: kramdown
 excerpt_separator: <!-- more -->
 
 permalink: none
+author: Rico Wang
